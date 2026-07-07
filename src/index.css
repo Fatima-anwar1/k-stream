@@ -5,27 +5,28 @@
   
   
 }
-
+html {
+  scroll-behavior: smooth;
+}
 /* Arrows ki positioning */
 .swiper-button-next, .swiper-button-prev {
-  color: #3b82f6 !important;
-  background: white !important;
-  width: 50px !important;
-  height: 50px !important;
-  border-radius: 50% !important;
-  position: absolute !important;
+  width: 12px;
+  height: 12px;
+  border-radius: 0 !important; /* Circle se square ho jayega */
+  background: white !important; /* Pehle hi white set kar diya */
+  opacity: 0.5;
 }
 
-/* Pagination Dots */
 .swiper-pagination-bullet {
-  background: white !important;
-  width: 12px !important;
-  height: 12px !important;
-  opacity: 1 !important;
+ width: 12px;
+  height: 12px;
+  border-radius: 0 !important; /* Circle se square ho jayega */
+  background: white !important; /* Pehle hi white set kar diya */
+  opacity: 0.5;
 }
-
 .swiper-pagination-bullet-active {
-  background: #3b82f6 !important;
+  background: white !important; /* Active wala pure white hoga */
+  opacity: 1 !important /* Active button ka color */
 }
 /* Mobile par arrows ko hide karne ke liye */
 @media (max-width: 768px) {
@@ -35,12 +36,18 @@
   }
 }
 
+body {
+  background-color: #000000;
+  margin: 0;
+  padding: 0;
+}
 /* 
    Agar tum chahti ho ke mobile par pagination (wo niche wale dots) 
    bhi na dikhen toh ye bhi add kar dena:
 */
 @media (max-width: 768px) {
   .swiper-pagination {
-    display: none !important;
+    bottom: 10px !important;      /* Slider se thoda upar */
+  z-index: 10;
   }
 }
