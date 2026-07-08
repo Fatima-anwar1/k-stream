@@ -10,18 +10,18 @@ const Navbar = () => {
     <nav className="fixed top-0 w-full z-50 backdrop-blur-md bg-black/30 px-4 py-3 ">
       
       {/* SARA CONTENT IS CONTAINER KE ANDAR DALA HAI */}
-      <div className="container mx-auto flex justify-between items-center text-white">
+      <div className="container mx-auto px-2 md:px-4 flex justify-between items-center text-white">
         
         {/* 1. Logo Section */}
         <div className="flex items-center gap-2 cursor-pointer group">
-          <h1 className="text-red-600 font-extrabold text-3xl tracking-tighter italic uppercase transition-transform duration-300 group-hover:scale-105">
+          <h1 className="text-red-600 font-extrabold text-2xl  md:text-3xl tracking-tighter italic uppercase transition-transform duration-300 group-hover:scale-105">
             K-STREAM <span className="text-white font-light text-xl not-italic">.</span>
           </h1>
           <div className="w-2 h-2 bg-red-600 rounded-full animate-pulse mt-3"></div>
         </div>
 
         {/* 2. Navigation Links (Ye ab justify-between ki wajah se center aur right ke beech mein adjust hoga) */}
-        <div className="flex gap-6 text-gray-300 font-medium text-sm tracking-wide items-center">
+        <div className="flex md:gap-6 gap-3 text-gray-300 font-medium text-sm tracking-wide items-center">
           <a href="#home" className="text-white hover:text-red-500 transition-colors duration-200 flex items-center gap-1">
             🎬 Home
           </a>
