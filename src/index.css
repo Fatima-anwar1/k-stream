@@ -24,6 +24,25 @@ html {
   background: white !important; /* Pehle hi white set kar diya */
   opacity: 0.5;
 }
+
+
+
+
+
+/* Ye style desktop par apply hoga */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Desktop par links door-door rahenge */
+}
+
+/* Sirf Mobile ke liye (Screen width 768px se kam) */
+@media (max-width: 768px) {
+  .navbar {
+    display: flex;
+    flex-direction: column; /* Ya jo bhi aapne layout set kiya hai */
+    align-items: flex-start; /* Ye aapki navbar ko left par le ayega */
+  }
+}
 .swiper-pagination-bullet-active {
   background: white !important; /* Active wala pure white hoga */
   opacity: 1 !important /* Active button ka color */

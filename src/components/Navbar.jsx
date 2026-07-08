@@ -7,7 +7,7 @@ const Navbar = () => {
 
   return (
     // Blur effect aur layout yahan set hai
-    <nav className="fixed top-0  z-11 backdrop-blur-md bg-black/30 ">
+    <nav className="fixed top-0 w-full z-50 backdrop-blur-md bg-black/30 px-4 py-3 ">
       
       {/* SARA CONTENT IS CONTAINER KE ANDAR DALA HAI */}
       <div className="container mx-auto flex justify-between items-center text-white">
