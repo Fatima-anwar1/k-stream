@@ -7,7 +7,7 @@ const Navbar = () => {
 
   return (
     // Blur effect aur layout yahan set hai
-    <nav className="fixed top-0 w-full z-50 backdrop-blur-md bg-black/30 p-4">
+    <nav className="fixed top-0  z-11 backdrop-blur-md bg-black/30 ">
       
       {/* SARA CONTENT IS CONTAINER KE ANDAR DALA HAI */}
       <div className="container mx-auto flex justify-between items-center text-white">
@@ -21,14 +21,14 @@ const Navbar = () => {
         </div>
 
         {/* 2. Navigation Links (Ye ab justify-between ki wajah se center aur right ke beech mein adjust hoga) */}
-        <div className="flex gap-8 text-gray-300 font-medium text-sm tracking-wide items-center">
+        <div className="flex gap-6 text-gray-300 font-medium text-sm tracking-wide items-center">
           <a href="#home" className="text-white hover:text-red-500 transition-colors duration-200 flex items-center gap-1">
             🎬 Home
           </a>
-          <a href="#browse" className="hover:text-red-500 transition-colors duration-200 flex items-center gap-1">
+          <a href="#browse" className=" hover:text-red-500 transition-colors duration-200 flex items-center gap-1">
             🔍 Browse
           </a>
-          <a href="#MyList" className="hover:text-red-500 transition-colors duration-200 flex items-center gap-1">
+          <a href="#MyList" className=" hidden md:block hover:text-red-500 transition-colors duration-200 flex items-center gap-1">
             💖MyList
           </a>
         </div>

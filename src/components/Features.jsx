@@ -68,7 +68,7 @@ const dramaSlides = [
 const Features = () => {
   return (
     // Navbar ke liye 'pt-20' hata diya taake slider top se start ho (MovieBox style)
-    <div className="relative z-10 w-full h-[500px]"> 
+    <div className="relative z-10 w-full h-[300px] md:h-[500px] mt-16 md:mt-0"> 
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
       navigation={{ nextEl: '.custom-next', prevEl: '.custom-prev' }}
@@ -92,8 +92,8 @@ const Features = () => {
     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
 
     {/* Content */}
-    <div className="absolute bottom-10 left-10 md:left-20 z-10 text-white max-w-2xl">
-      <h1 className="text-3xl md:text-4xl font-extrabold mb-4">{item.title}</h1>
+    <div className="absolute bottom-10 left-4 md:left-20 z-10 text-white max-w-2xl">
+      <h1 className="text-2xl md:text-4xl font-extrabold mb-4">{item.title}</h1>
       
      {/* Yeh code tumhare Features.jsx mein hona chahiye */}
 <div className="flex gap-3 mb-6">
@@ -103,14 +103,18 @@ const Features = () => {
     </span>
   ))}
 </div>
-      <div className="flex gap-4">
-        <button className="bg-white text-black px-6 py-3 font-bold rounded-lg hover:bg-gray-200 transition">
-          ▶ Watch Now
-        </button>
-        <button className="bg-white/20 backdrop-blur-md text-white px-10 py-3 font-bold rounded-lg hover:bg-white/30 transition">
-          + My List
-        </button>
-      </div>
+      {/* Button container */}
+<div className="flex flex-wrap items-center gap-4 mt-6">
+  {/* Watch Now Button */}
+  <button className="bg-white text-black px-6 py-2 md:px-8 md:py-3 rounded-md font-bold hover:bg-gray-200 transition-all">
+    Watch Now
+  </button>
+
+  {/* My List Button */}
+  <button className="bg-gray-700/70 text-white px-6 py-2 md:px-8 md:py-3 rounded-md font-bold backdrop-blur-sm hover:bg-gray-700 transition-all">
+    + My List
+  </button>
+</div>
     </div>
 
   </SwiperSlide>
@@ -118,7 +122,7 @@ const Features = () => {
 
       </Swiper>
 
-     <div className="absolute bottom-25 right-10 z-20 flex gap-3">
+     <div className="absolute bottom-13 right-4 z-20 flex gap-3">
         <button className="custom-prev bg-white/20 p-4 rounded-full text-white w-12 h-12 flex items-center justify-center border border-white/20">❮</button>
         <button className="custom-next bg-white/20 p-4 rounded-full text-white w-12 h-12 flex items-center justify-center border border-white/20">❯</button>
       </div>
